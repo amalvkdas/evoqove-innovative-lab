@@ -1,0 +1,68 @@
+.main-section-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+
+}
+
+.vertical-line {
+  display: block;
+  width: 1px;
+  height: 100vh;
+  background-color: #a2a0a0;
+  margin: 0 20px;
+}
+
+.filter-icon{
+  display: none;
+}
+
+
+.showSearch{
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .filterSection {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 300px;
+    height: 100vh; 
+    background-color: #fff;
+    z-index: 1000;
+    transition: left 0.3s ease; 
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .filter-icon {
+    display: block;
+  }
+
+  .filterSection.open {
+    left: 0;
+  }
+
+  .displayCards {
+    width: 100%;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .showSearch{
+    display: block;
+  }
+
+
+}
+
+
+
+
+
+
